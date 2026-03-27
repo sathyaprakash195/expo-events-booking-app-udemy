@@ -27,3 +27,15 @@ export interface IEvent {
 	created_at : string;
 	updated_at : string;
 }
+
+export interface IBooking {
+	id : string;
+	event_id : string;
+	user_id : string;
+	tickets_count : number;
+	total_price : number;
+	payment_id : string;
+	status : 'confirmed' | 'cancelled';
+	created_at : string;
+	updated_at : string;
+}
